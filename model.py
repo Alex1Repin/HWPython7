@@ -1,10 +1,14 @@
-def dict_book():
-    return dictions1
+# def dict_book():
+#     return dictions1
 
 dictions1 = {
-    'Иванов Иван Иванович' : '88883883826',
-    'Васильев Василий Алибобаевич' : '33332454567',
-    'Петров Петр Петрович' : '22226789879',
+    'иванов иван иванович' : '88883883826',
+    'васильев василий алибобаевич' : '33332454567',
+    'петров петр петрович' : '22226789879',
 }
 
+def antidictions(dictions):
+    return {v:k for k, v in dictions.items()}
+print(antidictions(dictions1))
 
+#antidictions = dict(zip(dictions.values(), dictions.keys()))
